@@ -109,7 +109,7 @@ module.exports = function(RED) {
             msg: msg,
             error: "timeout"
           };
-          console.error(dbgmsg);
+         // console.error(dbgmsg);
           return; //halt flow
         }
 
@@ -265,7 +265,7 @@ module.exports = function(RED) {
             data: data,
             error: error
           };
-          node.debug(dbgmsg);
+          node.warn(dbgmsg);
           return;
         }
       });

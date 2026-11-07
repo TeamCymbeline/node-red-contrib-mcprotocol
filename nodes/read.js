@@ -120,9 +120,9 @@ module.exports = function(RED) {
             msg: msg,
             error: "timeout"
           };
-          console.error(dbgmsg);
+         // console.error(dbgmsg);
           node.msgMem.mcReadDetails.errorMsg = "timeout";
-          node.send(node.msgMem);
+          // node.send(node.msgMem);
           return;
         }
 
@@ -288,7 +288,7 @@ module.exports = function(RED) {
             connection: `host: ${node.connectionConfig.host}, port: ${node.connectionConfig.port}`,
             address: addr
           };
-          node.debug(dbgmsg);
+          node.warn(dbgmsg);
           return;
         }
       });

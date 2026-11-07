@@ -1,6 +1,6 @@
 {
   "name": "@teamcymbeline/node-red-contrib-mcprotocol",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Node-RED nodes to read from and write to MITSUBISHI PLCs over Ethernet using MC Protocol",
   "repository": {
     "type": "git",
